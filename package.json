@@ -1,0 +1,29 @@
+{
+  "name": "product-store",
+  "version": "1.0.0",
+  "main": "Backend/server.js",
+  "scripts": {
+    "dev":"nodemon Backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjaycoder48/product-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjaycoder48/product-store/issues"
+  },
+  "homepage": "https://github.com/sanjaycoder48/product-store#readme",
+  "description": "",
+  "dependencies": {
+    "@arcjet/node": "^1.0.0-beta.15",
+    "@neondatabase/serverless": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1"
+  }
+}
