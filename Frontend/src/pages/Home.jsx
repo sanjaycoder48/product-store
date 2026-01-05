@@ -18,7 +18,7 @@ const Home = () => {
             })
             .catch(err => {
                 console.error(err);
-                setError('Could not load products. Ensure backend is running and DB is connected.');
+                setError(`Could not load products. Error: ${err.message}. Ensure backend is running.`);
                 setLoading(false);
             });
     }, []);
