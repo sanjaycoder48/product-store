@@ -13,4 +13,9 @@ const pool = new Pool({
     port: process.env.DB_PORT,
 });
 
+// Prevent crash on idle client error
+pool.on('error', (err, client) => {
+    console.error('Unexpected error on idle client', err);
+});
+
 export default pool;
